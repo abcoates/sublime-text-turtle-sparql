@@ -121,7 +121,7 @@
             "patterns": [
                 {
                     "name": "support.type.datatype.rdf.schema.turtle",
-                    "match": "(rdfs?:[a-zA-Z]+|(?!\\s)a(?!\\s))" /* 'a' is short for 'rdf:type' */
+                    "match": "(rdfs?:[a-zA-Z]+|(^|\\s)a(\\s|$))" /* 'a' is short for 'rdf:type' */
                 }
             ]
         },

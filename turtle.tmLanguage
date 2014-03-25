@@ -132,7 +132,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(rdfs?:[a-zA-Z]+|(?!\s)a(?!\s))</string>
+					<string>(rdfs?:[a-zA-Z]+|(^|\s)a(\s|$))</string>
 					<key>name</key>
 					<string>support.type.datatype.rdf.schema.turtle</string>
 				</dict>

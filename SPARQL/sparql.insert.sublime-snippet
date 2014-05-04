@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+INSERT ${1:DATA} {
+	${2:?s ?p ?o .}
+}
+]]></content>
+	<tabTrigger>insert</tabTrigger>
+	<scope>source.sparql</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+WHERE {
+	${1:?s ?p ?o .}
+}
+]]></content>
+	<tabTrigger>where</tabTrigger>
+	<scope>source.sparql</scope>
+</snippet>

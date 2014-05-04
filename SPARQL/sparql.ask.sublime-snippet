@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+ASK {
+	${1:?s ?p ?o .}
+}
+]]></content>
+	<tabTrigger>ask</tabTrigger>
+	<scope>source.sparql</scope>
+</snippet>

@@ -1,7 +1,7 @@
 {
 	"scope": "source.turtle",
 	"completions": [
-		{ "trigger":"@prefix", "contents":"@prefix xxx: <http://yyy> ." },
+		{ "trigger":"@prefix", "contents":"@prefix $1: <http://$0> ." },
 		"rdf:Alt",
 		"rdf:Bag",
 		"rdf:HTML",

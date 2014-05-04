@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+CONSTRUCT {
+	${1:?s ?p ?o .}	
+} WHERE {
+	${2:?s ?p ?o .}
+}
+]]></content>
+	<tabTrigger>construct</tabTrigger>
+	<scope>source.sparql</scope>
+</snippet>

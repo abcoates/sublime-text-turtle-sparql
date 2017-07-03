@@ -1,0 +1,137 @@
+{   "name": "ShEx",
+    "scopeName": "source.shex",
+    "fileTypes": ["shex"],
+    "uuid": "ed843a38-56ab-4b84-84ce-251ae4077ad6",
+    "patterns": [
+        { "include": "#comments" },
+        { "include": "#strings" },
+        { "include": "#base-prefix-declarations" },
+        { "include": "#string-language-suffixes" },
+        { "include": "#string-datatype-suffixes" },
+        { "include": "#relative-urls" },
+        { "include": "#xml-schema-types"},
+        { "include": "#rdf-schema-types"},
+        { "include": "#owl-types"},
+        { "include": "#qnames" },
+        { "include": "#punctuation-operators" }
+    ], 
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.hash.turtle", 
+                    "match": "(#).*$\\n?",
+                    "captures": {
+                        "1": {
+                            "name": "punctuation.definition.comment.turtle"
+                        }
+                    }
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "end": "\"\"\"", 
+                    "name": "string.quoted.triple.turtle", 
+                    "begin": "\"\"\""
+                }, 
+                {
+                    "patterns": [
+                        {
+                            "name": "invalid.string.newline", 
+                            "match": "\\n"
+                        }, 
+                        {
+                            "name": "constant.character.escape.turtle", 
+                            "match": "\\\\."
+                        }
+                    ], 
+                    "end": "\"", 
+                    "name": "string.quoted.double.turtle", 
+                    "begin": "\""
+                }
+            ]
+        },
+        "relative-urls": {
+            "patterns": [
+                {
+                    "name": "string.quoted.other.relative.url.turtle", 
+                    "begin": "<",
+                    "end": ">"
+                }
+            ]
+        },
+        "qnames": {
+            "patterns": [
+                {
+                    "name": "entity.name.other.qname.turtle", 
+                    "match": "([a-zA-Z][-_a-zA-Z0-9]*)?:([_a-zA-Z][-_a-zA-Z0-9]*)?"
+                }
+            ]
+        },
+        "base-prefix-declarations": {
+            "patterns": [
+                {
+                    "name": "keyword.other.prefix.turtle", 
+                    "match": "@(base|prefix)"
+                }
+            ]
+        },
+        "string-language-suffixes": {
+            "patterns": [
+                {
+                    "match": "(?!\")(@)([a-z]+(\\-[a-z0-9]+)*)",
+                    "captures": {
+                        "1": {
+                            "name": "keyword.operator.language.suffix.turtle"
+                        },
+                        "2": {
+                            "name": "constant.language.suffix.turtle"
+                        }
+                    }
+                }
+            ]
+        },
+        "string-datatype-suffixes": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.datatype.suffix.turtle", 
+                    "match": "\\^\\^"
+                }
+            ]
+        },
+        "punctuation-operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.punctuation.turtle", 
+                    "match": "(;|,|\\.|\\(|\\)|\\[|\\])"
+                }
+            ]
+        },
+        "xml-schema-types": {
+            "patterns": [
+                {
+                    "name": "support.type.datatype.xml.schema.turtle",
+                    "match": "xsd?:[a-z][a-zA-Z]+"
+                }
+            ]
+        },
+        "rdf-schema-types": {
+            "patterns": [
+                {
+                    "name": "support.type.datatype.rdf.schema.turtle",
+                    "match": "(rdfs?:[a-zA-Z]+|(^|\\s)a(\\s|$))" /* 'a' is short for 'rdf:type' */
+                }
+            ]
+        },
+        "owl-types": {
+            "patterns": [
+                {
+                    "name": "support.type.datatype.owl.turtle",
+                    "match": "owl:[a-zA-Z]+"
+                }
+            ]
+        }
+    }
+}

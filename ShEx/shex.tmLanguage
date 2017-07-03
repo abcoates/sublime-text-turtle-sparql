@@ -4,11 +4,10 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>ttl</string>
-		<string>nt</string>
+		<string>shex</string>
 	</array>
 	<key>name</key>
-	<string>Turtle</string>
+	<string>ShEx</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -66,7 +65,7 @@
 					<key>match</key>
 					<string>@(base|prefix)</string>
 					<key>name</key>
-					<string>keyword.other.prefix.turtle</string>
+					<string>keyword.other.prefix.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -80,13 +79,13 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.turtle</string>
+							<string>punctuation.definition.comment.shex</string>
 						</dict>
 					</dict>
 					<key>match</key>
 					<string>(#).*$\n?</string>
 					<key>name</key>
-					<string>comment.line.hash.turtle</string>
+					<string>comment.line.hash.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -98,7 +97,7 @@
 					<key>match</key>
 					<string>owl:[a-zA-Z]+</string>
 					<key>name</key>
-					<string>support.type.datatype.owl.turtle</string>
+					<string>support.type.datatype.owl.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -110,7 +109,7 @@
 					<key>match</key>
 					<string>(;|,|\.|\(|\)|\[|\])</string>
 					<key>name</key>
-					<string>keyword.operator.punctuation.turtle</string>
+					<string>keyword.operator.punctuation.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -122,7 +121,7 @@
 					<key>match</key>
 					<string>([a-zA-Z][-_a-zA-Z0-9]*)?:([_a-zA-Z][-_a-zA-Z0-9]*)?</string>
 					<key>name</key>
-					<string>entity.name.other.qname.turtle</string>
+					<string>entity.name.other.qname.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -134,7 +133,7 @@
 					<key>match</key>
 					<string>(rdfs?:[a-zA-Z]+|(^|\s)a(\s|$))</string>
 					<key>name</key>
-					<string>support.type.datatype.rdf.schema.turtle</string>
+					<string>support.type.datatype.rdf.schema.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -148,7 +147,7 @@
 					<key>end</key>
 					<string>&gt;</string>
 					<key>name</key>
-					<string>string.quoted.other.relative.url.turtle</string>
+					<string>string.quoted.other.relative.url.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -160,7 +159,7 @@
 					<key>match</key>
 					<string>\^\^</string>
 					<key>name</key>
-					<string>keyword.operator.datatype.suffix.turtle</string>
+					<string>keyword.operator.datatype.suffix.shex</string>
 				</dict>
 			</array>
 		</dict>
@@ -174,12 +173,12 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.operator.language.suffix.turtle</string>
+							<string>keyword.operator.language.suffix.shex</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>constant.language.suffix.turtle</string>
+							<string>constant.language.suffix.shex</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -197,7 +196,7 @@
 					<key>end</key>
 					<string>"""</string>
 					<key>name</key>
-					<string>string.quoted.triple.turtle</string>
+					<string>string.quoted.triple.shex</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -205,7 +204,7 @@
 					<key>end</key>
 					<string>"</string>
 					<key>name</key>
-					<string>string.quoted.double.turtle</string>
+					<string>string.quoted.double.shex</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -218,7 +217,7 @@
 							<key>match</key>
 							<string>\\.</string>
 							<key>name</key>
-							<string>constant.character.escape.turtle</string>
+							<string>constant.character.escape.shex</string>
 						</dict>
 					</array>
 				</dict>
@@ -232,13 +231,13 @@
 					<key>match</key>
 					<string>xsd?:[a-z][a-zA-Z]+</string>
 					<key>name</key>
-					<string>support.type.datatype.xml.schema.turtle</string>
+					<string>support.type.datatype.xml.schema.shex</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.turtle</string>
+	<string>source.shex</string>
 	<key>uuid</key>
 	<string>ed843a38-56ab-4b84-84ce-251ae4077ad6</string>
 </dict>

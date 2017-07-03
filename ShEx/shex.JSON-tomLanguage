@@ -19,11 +19,11 @@
         "comments": {
             "patterns": [
                 {
-                    "name": "comment.line.hash.turtle", 
+                    "name": "comment.line.hash.shex", 
                     "match": "(#).*$\\n?",
                     "captures": {
                         "1": {
-                            "name": "punctuation.definition.comment.turtle"
+                            "name": "punctuation.definition.comment.shex"
                         }
                     }
                 }
@@ -33,7 +33,7 @@
             "patterns": [
                 {
                     "end": "\"\"\"", 
-                    "name": "string.quoted.triple.turtle", 
+                    "name": "string.quoted.triple.shex", 
                     "begin": "\"\"\""
                 }, 
                 {
@@ -43,12 +43,12 @@
                             "match": "\\n"
                         }, 
                         {
-                            "name": "constant.character.escape.turtle", 
+                            "name": "constant.character.escape.shex", 
                             "match": "\\\\."
                         }
                     ], 
                     "end": "\"", 
-                    "name": "string.quoted.double.turtle", 
+                    "name": "string.quoted.double.shex", 
                     "begin": "\""
                 }
             ]
@@ -56,7 +56,7 @@
         "relative-urls": {
             "patterns": [
                 {
-                    "name": "string.quoted.other.relative.url.turtle", 
+                    "name": "string.quoted.other.relative.url.shex", 
                     "begin": "<",
                     "end": ">"
                 }
@@ -65,7 +65,7 @@
         "qnames": {
             "patterns": [
                 {
-                    "name": "entity.name.other.qname.turtle", 
+                    "name": "entity.name.other.qname.shex", 
                     "match": "([a-zA-Z][-_a-zA-Z0-9]*)?:([_a-zA-Z][-_a-zA-Z0-9]*)?"
                 }
             ]
@@ -73,7 +73,7 @@
         "base-prefix-declarations": {
             "patterns": [
                 {
-                    "name": "keyword.other.prefix.turtle", 
+                    "name": "keyword.other.prefix.shex", 
                     "match": "@(base|prefix)"
                 }
             ]
@@ -84,10 +84,10 @@
                     "match": "(?!\")(@)([a-z]+(\\-[a-z0-9]+)*)",
                     "captures": {
                         "1": {
-                            "name": "keyword.operator.language.suffix.turtle"
+                            "name": "keyword.operator.language.suffix.shex"
                         },
                         "2": {
-                            "name": "constant.language.suffix.turtle"
+                            "name": "constant.language.suffix.shex"
                         }
                     }
                 }
@@ -96,7 +96,7 @@
         "string-datatype-suffixes": {
             "patterns": [
                 {
-                    "name": "keyword.operator.datatype.suffix.turtle", 
+                    "name": "keyword.operator.datatype.suffix.shex", 
                     "match": "\\^\\^"
                 }
             ]
@@ -104,7 +104,7 @@
         "punctuation-operators": {
             "patterns": [
                 {
-                    "name": "keyword.operator.punctuation.turtle", 
+                    "name": "keyword.operator.punctuation.shex", 
                     "match": "(;|,|\\.|\\(|\\)|\\[|\\])"
                 }
             ]
@@ -112,7 +112,7 @@
         "xml-schema-types": {
             "patterns": [
                 {
-                    "name": "support.type.datatype.xml.schema.turtle",
+                    "name": "support.type.datatype.xml.schema.shex",
                     "match": "xsd?:[a-z][a-zA-Z]+"
                 }
             ]
@@ -120,7 +120,7 @@
         "rdf-schema-types": {
             "patterns": [
                 {
-                    "name": "support.type.datatype.rdf.schema.turtle",
+                    "name": "support.type.datatype.rdf.schema.shex",
                     "match": "(rdfs?:[a-zA-Z]+|(^|\\s)a(\\s|$))" /* 'a' is short for 'rdf:type' */
                 }
             ]
@@ -128,7 +128,7 @@
         "owl-types": {
             "patterns": [
                 {
-                    "name": "support.type.datatype.owl.turtle",
+                    "name": "support.type.datatype.owl.shex",
                     "match": "owl:[a-zA-Z]+"
                 }
             ]

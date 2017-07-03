@@ -1,5 +1,5 @@
 {
-	"scope": "source.turtle",
+	"scope": "source.shex",
 	"completions": [
 		{ "trigger":"@prefix", "contents":"@prefix $1: <http://$0> ." },
 		"rdf:Alt",
